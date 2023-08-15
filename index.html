@@ -1,0 +1,233 @@
+<html
+  __fvdsurfcanyoninserted="1"
+  class="clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
+    <link rel="shortcut icon" type="image/png" href="./BanhKem.jpg" />
+
+    <!-- 1. Đây là phần title của website -->
+    <title>Sinh nhật của ebe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      window.open = function () {};
+      window.print = function () {};
+      // Support hover state for mobile.
+      if (false) {
+        window.ontouchstart = function () {};
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+    ></script>
+    <meta content="clickberry-extension-here" />
+  </head>
+
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Wendy+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <div class="container">
+      <!-- 2. Dòng chữ Happy Birthday
+            Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+      <div class="balloon">
+        <div><span onclick="messH1()" class="avatar__title">H</span></div>
+        <div><span onclick="messA()" class="avatar__title">A</span></div>
+        <div><span onclick="messP1()" class="avatar__title">P</span></div>
+        <div><span onclick="messP2()" class="avatar__title">P</span></div>
+        <div><span onclick="messY1()" class="avatar__title">Y</span></div>
+        <div><span onclick="messB()" class="avatar__title">B</span></div>
+        <div><span onclick="messI()" class="avatar__title">I</span></div>
+        <div><span onclick="messR()" class="avatar__title">R</span></div>
+        <div><span onclick="messT()" class="avatar__title">T</span></div>
+        <div><span onclick="messH2()" class="avatar__title">H</span></div>
+        <div><span onclick="messD()" class="avatar__title">D</span></div>
+        <div><span onclick="messA2()" class="avatar__title">A</span></div>
+        <div><span onclick="messY2()" class="avatar__title">Y</span></div>
+      </div>
+      <div class="avatar">
+        <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+        <img
+          src="./AVT_ebe.jpg"
+          alt=""
+          class="avatar__img"
+          onclick="showMessage()"
+        />
+        <!-- 4. Tên của người đó -->
+        <h1 onclick="showMessage()" class="avatar__title">Ebe Mngi</h1>
+      </div>
+      <!-- 5. Phần nhạc -->
+      <audio id="player" autoplay loop>
+        <source src="./music.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+
+      function showMessage() {
+        // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+        swal({
+          title: "Lời nhắn", // Tiêu đề của popup
+          text: "Chúc em yêu sinh nhật vui vẻ", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      //H
+      function messH1() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "H", // Tiêu đề của popup
+          text: "Hôm nay là sinh nhật em, anh chúc em nhận được mọi điều tốt đẹp nhất. Sau này cũng vậy, anh mong mỗi ngày những điều tốt lành đó vẫn ở mãi bên em và bản thân anh cũng vậy, sẽ mãi bên em <3", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      //A
+      function messA() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "A", // Tiêu đề của popup
+          text: "Anh yêu em nhiều lắm lắm hihi", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      //P
+      function messP1() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "P", // Tiêu đề của popup
+          text: "Phải nói em là một cô gái dễ thương nhất mà anh từng biết lun á :> ", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      //P
+      function messP2() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "P", // Tiêu đề của popup
+          text: "Phút giây này anh thật sự hạnh phúc khi có em ở bên :>", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messY1() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "Y", // Tiêu đề của popup
+          text: "Yêu em nhiều đến nổi con tim này 4 ngăn thui là chưa đủ lun áaa", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messB() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "B", // Tiêu đề của popup
+          text: "Bên nhau những ngày mưa, hai ta phải thật hạnh phúc vào ngày nắng em nhá ^^", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messI() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "I", // Tiêu đề của popup
+          text: "I love you so much <333333 ", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messR() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "R", // Tiêu đề của popup
+          text: "Rảnh thì bên nhau, bận thì nhớ nhau. Miễn luôn hướng về nhau em nhá :>", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messT() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "T", // Tiêu đề của popup
+          text: "Trái đất này hình cầu, còn con tim này của anh hình...bóng em :>", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messH2() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "H", // Tiêu đề của popup
+          text: "Hình như nãy giờ anh hơi bị sến quá gòi. Thui tui chúc bà sinh nhật vui vẻ nhen nghe cho nó truyền thống hehe", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messD() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "D", // Tiêu đề của popup
+          text: "D trong dui dẻ, D trong dễ thương, D trong dịu dàng. Nói ebe của anh ó :>", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messA2() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "A", // Tiêu đề của popup
+          text: "Ai lớp diu chu cà mo hihi", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      function messY2() {
+        //Lời nhắn hiện ra khi bấm vào
+        swal({
+          title: "Y", // Tiêu đề của popup
+          text: "Yên tâm em nhé. Anh vẫn yêu em mỗi ngày đều đặn, chỉ là anh hong giỏi thể hiện ra bên ngoài thui í. Bởi vì bây giờ anh thương em rùi hong phải cứ thể hiện quá mức là yêu em đâu. Anh dùng sự cố gắng của mình để nói với em đó ạ :>", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
